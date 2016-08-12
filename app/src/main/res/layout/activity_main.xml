@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customswitch="http://schemas.android.com/apk/res/com.earl.customview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/show_button"/>
+
+    <!--钟表-->
+    <!--<com.earl.customview.view.ClockView-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"/>-->
+
+    <com.earl.customview.view.CustomSwitchView
+        android:id="@+id/csv_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        customswitch:switch_background="@drawable/switch_background"
+        customswitch:switch_foreground="@drawable/switch_foreground"
+        customswitch:switch_state="true" />
+</LinearLayout>
